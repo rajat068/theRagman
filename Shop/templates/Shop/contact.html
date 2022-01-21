@@ -1,0 +1,49 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %}Contact Us{% endblock  %}
+
+
+{% block body %}
+
+
+
+<div class="container-fluid px-0">
+
+
+    <img src="https://source.unsplash.com/700x400/?phone,contact" height="600" weight="600" class="d-block w-100" alt="...">
+
+
+</div>
+<div class="container py-3">
+    <h2 class="text-center"><i>Contact Us</i></h2>
+
+    <form method="POST" action="/shop/contact/">
+    {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label"><i>Name</i></label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label"><i>Email address</i></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="phone" class="form-label"><i>Phone</i></label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="eg:- +91 9090909090">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="desc" class="form-label"><i>How can I Help You....</i></label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+        </div>
+
+
+        <button type="submit" class="btn btn-success"><i>Submit</i></button>
+    </form>
+
+</div>
+
+{% endblock  %}

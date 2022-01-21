@@ -1,0 +1,59 @@
+{% extends 'shop/basic.html' %} 
+
+{% block title %} Title of About {% endblock %}
+{% block css %}
+
+#img{
+  border-radius: 222px;
+  float:right
+}
+
+{% endblock %}
+
+
+
+{% block body %} 
+
+<div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/shop/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4"><b><i>The Rag Man</i></b></span>
+      </a>
+    </header>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        
+         <span><img id="img" src="/static/Shop/about.png" height="200"  alt=""></span>
+        <h1 class="display-5 fw-bold">Who We Are ?</h1>
+        <p class="col-md-8 fs-4">The Rag Man is a startup with a bull’s eye vison whose only ambition is to serve our nation folks with a GO Green Environment. Our organization is an absolute blend of two words Junk & art, Junk goes for service you will sell online to keep your homeland clean and art is the technology friendly creative touch we give to erode away service from your home in exchange of some valuable cash which can be accessed through any devices or gadgets resourced with our mobility & web solutions.</p>
+        <a href="/shop/contact/"><button class="btn btn-primary btn-lg" type="button">Contact Us</button></a>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Why Online ?</h2>
+          <h4><u><i>Trust </i></u></h4>
+          <p>We use ISO marked weighing machine and guarantee 100% accuracy in weight measurement</p>
+          <h4><u><i>Convenience</i></u></h4>
+          <p>Schedule Pickup according to time and date convenient to you.</p>
+          <h4><u><i>Time efficiency</i></u></h4>
+          <p>f you don't want cash then you can also shop quality products at reasonable prices from our online store in exchange of your service and save your shopping time.</p>
+          <h4><u>Best Rates</u></h4>
+          <p>We try our best to provide you high worth of your service</p>
+          <button class="btn btn-outline-primary" type="button">Learn More</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Benifit's</h2>
+          <p>The Rag Man landed its feet in online Services market to resolve all the loopholes related to Buy & Sell of waste from the customers online. We made a wider impact in our flourishing waste management industry by collaborating with all the vendors to form a profitable chain management with a hassle free online pick up pre-arrangement for our customers through a dedicated Mobile Application & a vendor purposed mobility solution to crack down nerve free communication between customers and vendors where our team monitors all the web process for a smooth functioning. Exchange of scrap with reference to our well-defined rate card (based on up & down market) for distress free giving away of cash or the accounted amount.</p>
+          <a href="/shop/contact/"><button class="btn btn-outline-success" type="button">Request For Call</button></a>
+        </div>
+      </div>
+    </div>
+
+{% endblock  %}
+
